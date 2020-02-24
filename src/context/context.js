@@ -8,7 +8,8 @@ class ProductProvider extends Component {
     sidebarOpen: false,
     cartOpen: false,
     cartItems: 14,
-    links: linkData
+    links: linkData,
+    cart: []
   }
   //handle sidebar
   handleSidebar = () => {
@@ -34,7 +35,7 @@ class ProductProvider extends Component {
       <ProductContext.Provider value={{
         ...this.state,
         handleSidebar: this.handleSidebar,
-        handelCart: this.handelCart,
+        handleCart: this.handleCart,
         closeCart: this.closeCart,
         openCart: this.openCart
       }}>

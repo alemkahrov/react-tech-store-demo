@@ -15,7 +15,7 @@ export default function Navbar() {
               <FaBars className="nav-icon toggle-icon" onClick={handleSidebar} />
               <img src={logo} alt="tech store logo" />
               <div className="cart-icon-box">
-                <FaCartPlus class="nav-icon cart-icon" onClick={handleCart} />
+                <FaCartPlus className="nav-icon cart-icon" onClick={handleCart} />
                 <div className="cart-badge">{cartItems}</div>
               </div>
             </div>
