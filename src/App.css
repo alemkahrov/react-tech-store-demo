@@ -2,7 +2,7 @@
 
 :root {
   --primaryColor: #5fb7ea;
-  --primaryRGB: rgba(0,0,0, .3);
+  --primaryRGBA: rgba(0,0,0, .3);
   --mainGrey: #fafafa;
   --darkGrey: #5f5e5e;
   --mainWhite: #fff;
@@ -24,4 +24,27 @@
 body {
   font-family: 'Open Sans', sans-serif !important;
   background: var(--mainGrey) !important;
+  overflow-x: hidden;
+}
+
+.main-link {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  padding: 0.5rem 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: inline-block;
+  letter-spacing: var(--mainSpacing);
+  outline: 2px solid var(--primaryColor);
+  outline-offset: 4px;
+  border: none;
+  transition: var(--mainTransition);
+}
+
+.main-link:hover {
+  text-decoration: none;
+  color: var(--primaryColor);
+  background: var(--darkGrey);
+  outline-color: var(--darkGrey);
 }

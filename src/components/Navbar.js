@@ -34,6 +34,7 @@ width: 100%;
 padding: 1rem 1.5rem;
 background: var(--mainGrey);
 border-bottom: 3px solid var(--primaryColor);
+z-index: 9999;
 .nav-inner {
   display: flex;
   align-items: center;
